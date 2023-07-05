@@ -18,13 +18,13 @@ function App() {
 
   useEffect(() => {
     const container = document.getElementById('graph');
-    const graphData = {
+    const data = {
       nodes: nodes,
       edges: edges
     };
     const options = {
       nodes: {
-        shape: 'circle',  // It makes the nodes round.
+        shape: 'box',  // It makes the nodes look like Neo4j's.
         color: {
           background: 'lightblue',
           border: 'grey'
@@ -43,6 +43,9 @@ function App() {
           size: 10,
           align: 'middle'
         },
+        smooth: {
+          type: 'curvedCW'
+        }
       },
       physics: {  // It's for layout. Play around with these values for desired output.
         barnesHut: {
@@ -52,7 +55,7 @@ function App() {
         }
       }
     };
-    new Network(container, graphData, options);
+    new Network(container, data, options);
   }, []);
 
   return (
