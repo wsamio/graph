@@ -1,192 +1,245 @@
-{
+
+  {
     "nodes": [
       {
-        "id": "PiedmontHealthcare",
-        "labels": ["Organization"],
+        "id": 34,
         "properties": {
-          "name": "Piedmont Healthcare"
-        }
+          "name": "The Model for Improvement"
+        },
+        "labels": [
+          "Model"
+        ]
       },
       {
-        "id": "EducationalProgram",
-        "labels": ["Program"],
+        "id": 35,
         "properties": {
-          "name": "Educational Programs"
-        }
+          "name": "The PDSA Cycle"
+        },
+        "labels": [
+          "PDSA"
+        ]
       },
       {
-        "id": "SafetyRate",
-        "labels": ["Safety"],
+        "id": 36,
         "properties": {
-          "name": "Serious Safety Event Rate",
-          "instances": 1399
-        }
+          "name": "Process Mapping"
+        },
+        "labels": [
+          "ProcessMapping"
+        ]
       },
       {
-        "id": "AlwaysSafeProgram",
-        "labels": ["Program"],
+        "id": 37,
         "properties": {
-          "name": "Always Safe Program"
-        }
+          "name": "Swim Lane Process Mapping"
+        },
+        "labels": [
+          "SwimLaneProcessMapping"
+        ]
       },
       {
-        "id": "HospitalDepartments",
-        "labels": ["Department"],
+        "id": 38,
         "properties": {
-          "name": "Hospital Departments and Ambulatory Offices"
-        }
+          "name": "Quality Improvement Basics and Tools"
+        },
+        "labels": [
+          "QualityImprovement"
+        ]
       },
       {
-        "id": "SAFEPrinciples",
-        "labels": ["Principles"],
+        "id": 39,
         "properties": {
-          "name": "SAFE principles"
-        }
+          "name": "Applying Quality Improvement to Processes and Systems"
+        },
+        "labels": [
+          "ApplyingQualityImprovement"
+        ]
       },
       {
-        "id": "ErrorPreventionTools",
-        "labels": ["Tools"],
+        "id": 40,
         "properties": {
-          "name": "Error Prevention Tools"
-        }
+          "name": "Process and System Thinking for Continuous Improvement"
+        },
+        "labels": [
+          "ProcessSystemThinking"
+        ]
       },
       {
-        "id": "HighReliabilityOrganization",
-        "labels": ["Organization"],
+        "id": 41,
         "properties": {
-          "name": "High Reliability Organization"
-        }
+          "name": "Patient Experience and Technology in Healthcare"
+        },
+        "labels": [
+          "PatientExperience"
+        ]
       },
       {
-        "id": "RootCauseAnalysis",
-        "labels": ["Analysis"],
+        "id": 42,
         "properties": {
-          "name": "Root Cause Analysis"
-        }
+          "name": "Process mapping and efficiency"
+        },
+        "labels": [
+          "ProcessMappingEfficiency"
+        ]
       },
       {
-        "id": "SafetyCoachPartnership",
-        "labels": ["Partnership"],
+        "id": 43,
         "properties": {
-          "name": "Safety Coach Partnership"
-        }
+          "name": "Data analysis and interpretation"
+        },
+        "labels": [
+          "DataAnalysis"
+        ]
       },
       {
-        "id": "PatientSafetyTracking",
-        "labels": ["Tracking"],
+        "id": 44,
         "properties": {
-          "name": "Culture of Patient Safety Performance Tracking"
-        }
+          "name": "Quality improvement and performance goals"
+        },
+        "labels": [
+          "QualityImprovementGoals"
+        ]
       },
       {
-        "id": "CoachCareAI",
-        "labels": ["Platform"],
+        "id": 45,
         "properties": {
-          "name": "CoachCare AI platform"
-        }
+          "name": "Data visualization and communication"
+        },
+        "labels": [
+          "DataVisualization"
+        ]
       },
       {
-        "id": "PilotProgram",
-        "labels": ["Program"],
+        "id": 46,
         "properties": {
-          "name": "Proposed Pilot Program"
-        }
+          "name": "Change Management Models"
+        },
+        "labels": [
+          "ChangeManagement"
+        ]
       },
       {
-        "id": "KaustubhBhardwaj",
-        "labels": ["Person"],
+        "id": 47,
         "properties": {
-          "name": "Kaustubh Bhardwaj"
-        }
+          "name": "The 8-Step Model"
+        },
+        "labels": [
+          "EightStepModel"
+        ]
       },
       {
-        "id": "DrLeighHamby",
-        "labels": ["Person"],
+        "id": 48,
         "properties": {
-          "name": "Dr. Leigh Hamby"
-        }
+          "name": "Effective Communication"
+        },
+        "labels": [
+          "EffectiveCommunication"
+        ]
+      },
+      {
+        "id": 49,
+        "properties": {
+          "name": "Organizational Culture and Change"
+        },
+        "labels": [
+          "OrganizationalCultureChange"
+        ]
+      },
+      {
+        "id": 50,
+        "properties": {
+          "name": "Project Charters"
+        },
+        "labels": [
+          "ProjectCharters"
+        ]
       }
     ],
     "relationships": [
       {
-        "start": "PiedmontHealthcare",
-        "end": "EducationalProgram",
-        "type": "HAS_POLICY_FOR"
+        "start": 34,
+        "end": 46,
+        "type": "HAS_COMPONENT"
       },
       {
-        "start": "PiedmontHealthcare",
-        "end": "SafetyRate",
-        "type": "HAS"
+        "start": 34,
+        "end": 42,
+        "type": "HAS_COMPONENT"
       },
       {
-        "start": "PiedmontHealthcare",
-        "end": "AlwaysSafeProgram",
-        "type": "IMPLEMENTS"
+        "start": 34,
+        "end": 39,
+        "type": "HAS_COMPONENT"
       },
       {
-        "start": "AlwaysSafeProgram",
-        "end": "HospitalDepartments",
-        "type": "COLLABORATES_WITH"
+        "start": 34,
+        "end": 36,
+        "type": "HAS_COMPONENT"
       },
       {
-        "start": "PiedmontHealthcare",
-        "end": "SAFEPrinciples",
-        "type": "USES"
+        "start": 34,
+        "end": 35,
+        "type": "HAS_COMPONENT"
       },
       {
-        "start": "PiedmontHealthcare",
-        "end": "ErrorPreventionTools",
-        "type": "USES"
+        "start": null,
+        "end": null,
+        "type": null
       },
       {
-        "start": "SAFEPrinciples",
-        "end": "ErrorPreventionTools",
-        "type": "USED_WITH"
+        "start": 36,
+        "end": 38,
+        "type": "HELPS_TO_MAP"
       },
       {
-        "start": "PiedmontHealthcare",
-        "end": "HighReliabilityOrganization",
-        "type": "IMPLEMENTS"
+        "start": 36,
+        "end": 37,
+        "type": "HELPS_TO_MAP"
       },
       {
-        "start": "PiedmontHealthcare",
-        "end": "RootCauseAnalysis",
-        "type": "IMPLEMENTS"
+        "start": 39,
+        "end": 41,
+        "type": "HELPS_TO_MANAGE"
       },
       {
-        "start": "PiedmontHealthcare",
-        "end": "SafetyCoachPartnership",
-        "type": "IMPLEMENTS"
+        "start": 39,
+        "end": 40,
+        "type": "HELPS_TO_MANAGE"
       },
       {
-        "start": "PiedmontHealthcare",
-        "end": "PatientSafetyTracking",
-        "type": "IMPLEMENTS"
+        "start": 42,
+        "end": 44,
+        "type": "HELPS_TO_IMPROVE"
       },
       {
-        "start": "PiedmontHealthcare",
-        "end": "CoachCareAI",
-        "type": "PROPOSED_TO_USE"
+        "start": 42,
+        "end": 43,
+        "type": "HELPS_TO_ANALYZE"
       },
       {
-        "start": "PilotProgram",
-        "end": "CoachCareAI",
-        "type": "USES"
+        "start": 44,
+        "end": 45,
+        "type": "HELPS_TO_VISUALIZE"
       },
       {
-        "start": "PiedmontHealthcare",
-        "end": "CoachCareAI",
-        "type": "TO_HAVE"
+        "start": 46,
+        "end": 47,
+        "type": "HELPS_TO_MANAGE"
       },
       {
-        "start": "KaustubhBhardwaj",
-        "end": "CoachCareAI",
-        "type": "IS_FOUNDER_OF"
+        "start": 47,
+        "end": 49,
+        "type": "AFFECTS"
       },
       {
-        "start": "DrLeighHamby",
-        "end": "PiedmontHealthcare",
-        "type": "IS_CMO_OF"
+        "start": 47,
+        "end": 48,
+        "type": "HELPS_TO_MANAGE"
+      },
+      {
+        "start": 49,
+        "end": 50,
+        "type": "AFFECTS"
       }
     ]
   }

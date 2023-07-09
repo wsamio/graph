@@ -1,0 +1,192 @@
+{
+    "nodes": [
+      {
+        "id": "PiedmontHealthcare",
+        "labels": ["Organization"],
+        "properties": {
+          "name": "Piedmont Healthcare"
+        }
+      },
+      {
+        "id": "EducationalProgram",
+        "labels": ["Program"],
+        "properties": {
+          "name": "Educational Programs"
+        }
+      },
+      {
+        "id": "SafetyRate",
+        "labels": ["Safety"],
+        "properties": {
+          "name": "Serious Safety Event Rate",
+          "instances": 1399
+        }
+      },
+      {
+        "id": "AlwaysSafeProgram",
+        "labels": ["Program"],
+        "properties": {
+          "name": "Always Safe Program"
+        }
+      },
+      {
+        "id": "HospitalDepartments",
+        "labels": ["Department"],
+        "properties": {
+          "name": "Hospital Departments and Ambulatory Offices"
+        }
+      },
+      {
+        "id": "SAFEPrinciples",
+        "labels": ["Principles"],
+        "properties": {
+          "name": "SAFE principles"
+        }
+      },
+      {
+        "id": "ErrorPreventionTools",
+        "labels": ["Tools"],
+        "properties": {
+          "name": "Error Prevention Tools"
+        }
+      },
+      {
+        "id": "HighReliabilityOrganization",
+        "labels": ["Organization"],
+        "properties": {
+          "name": "High Reliability Organization"
+        }
+      },
+      {
+        "id": "RootCauseAnalysis",
+        "labels": ["Analysis"],
+        "properties": {
+          "name": "Root Cause Analysis"
+        }
+      },
+      {
+        "id": "SafetyCoachPartnership",
+        "labels": ["Partnership"],
+        "properties": {
+          "name": "Safety Coach Partnership"
+        }
+      },
+      {
+        "id": "PatientSafetyTracking",
+        "labels": ["Tracking"],
+        "properties": {
+          "name": "Culture of Patient Safety Performance Tracking"
+        }
+      },
+      {
+        "id": "CoachCareAI",
+        "labels": ["Platform"],
+        "properties": {
+          "name": "CoachCare AI platform"
+        }
+      },
+      {
+        "id": "PilotProgram",
+        "labels": ["Program"],
+        "properties": {
+          "name": "Proposed Pilot Program"
+        }
+      },
+      {
+        "id": "KaustubhBhardwaj",
+        "labels": ["Person"],
+        "properties": {
+          "name": "Kaustubh Bhardwaj"
+        }
+      },
+      {
+        "id": "DrLeighHamby",
+        "labels": ["Person"],
+        "properties": {
+          "name": "Dr. Leigh Hamby"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "start": "PiedmontHealthcare",
+        "end": "EducationalProgram",
+        "type": "HAS_POLICY_FOR"
+      },
+      {
+        "start": "PiedmontHealthcare",
+        "end": "SafetyRate",
+        "type": "HAS"
+      },
+      {
+        "start": "PiedmontHealthcare",
+        "end": "AlwaysSafeProgram",
+        "type": "IMPLEMENTS"
+      },
+      {
+        "start": "AlwaysSafeProgram",
+        "end": "HospitalDepartments",
+        "type": "COLLABORATES_WITH"
+      },
+      {
+        "start": "PiedmontHealthcare",
+        "end": "SAFEPrinciples",
+        "type": "USES"
+      },
+      {
+        "start": "PiedmontHealthcare",
+        "end": "ErrorPreventionTools",
+        "type": "USES"
+      },
+      {
+        "start": "SAFEPrinciples",
+        "end": "ErrorPreventionTools",
+        "type": "USED_WITH"
+      },
+      {
+        "start": "PiedmontHealthcare",
+        "end": "HighReliabilityOrganization",
+        "type": "IMPLEMENTS"
+      },
+      {
+        "start": "PiedmontHealthcare",
+        "end": "RootCauseAnalysis",
+        "type": "IMPLEMENTS"
+      },
+      {
+        "start": "PiedmontHealthcare",
+        "end": "SafetyCoachPartnership",
+        "type": "IMPLEMENTS"
+      },
+      {
+        "start": "PiedmontHealthcare",
+        "end": "PatientSafetyTracking",
+        "type": "IMPLEMENTS"
+      },
+      {
+        "start": "PiedmontHealthcare",
+        "end": "CoachCareAI",
+        "type": "PROPOSED_TO_USE"
+      },
+      {
+        "start": "PilotProgram",
+        "end": "CoachCareAI",
+        "type": "USES"
+      },
+      {
+        "start": "PiedmontHealthcare",
+        "end": "CoachCareAI",
+        "type": "TO_HAVE"
+      },
+      {
+        "start": "KaustubhBhardwaj",
+        "end": "CoachCareAI",
+        "type": "IS_FOUNDER_OF"
+      },
+      {
+        "start": "DrLeighHamby",
+        "end": "PiedmontHealthcare",
+        "type": "IS_CMO_OF"
+      }
+    ]
+  }

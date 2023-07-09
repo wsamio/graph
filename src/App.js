@@ -30,7 +30,8 @@ function App() {
           border: 'grey'
         },
         font: {
-          color: 'black'
+          color: 'black',
+          size: 20
         }
       },
       edges: {
@@ -40,7 +41,7 @@ function App() {
         },
         font: {
           color: 'grey',
-          size: 10,
+          size: 16,
           align: 'middle'
         },
       },
@@ -48,7 +49,7 @@ function App() {
         barnesHut: {
           gravitationalConstant: -40000,
           centralGravity: 0.3,
-          springLength: 95
+          springLength: 140
         }
       }
     };
